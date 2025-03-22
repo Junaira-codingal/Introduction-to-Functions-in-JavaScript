@@ -4,28 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      * {
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: black;
+        text-shadow: 0px 0px 4px white;
+        font-weight: bold;
+      }
+      body {
+        background-image: url(https://png.pngtree.com/background/20210712/original/pngtree-hand-drawn-math-education-calculator-ruler-background-picture-image_1178880.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+      }
+    </style>
   </head>
   <body>
-    <h2>Regular/Expession/Arrow Function</h2>
+    <center>
+      <h2 style="font-family: cursive; text-shadow: 0px 0px 14px blue">
+        Operations with 32 and 16
+      </h2>
 
-    <script>
-      //Regular Function
-      function add(a, b) {
-        return a + b;
-      }
+      <script>
+        //Regular Function
+        function add(a, b) {
+          return a + b;
+        }
 
-      //Expression function
-      var sub = function (a, b) {
-        return a - b;
-      };
+        //Expression function
+        var sub = function (a, b) {
+          return a - b;
+        };
 
-      //Arrow Function
-      var mult = (a, b) => a * b;
+        //Arrow Function
+        var mult = (a, b) => a * b;
+        //Arrow Function
+        var div = (a, b) => a / b;
 
-      //Calling the function
-      document.write(`Regular Function : ${add(45, 15)}<br>`);
-      document.write(`Expression Function : ${sub(45, 15)}<br>`);
-      document.write(`Arrow Function : ${mult(45, 15)}<br>`);
-    </script>
+        //Calling the function
+        document.write(`Addition : ${add(32, 16)}<br>`);
+        document.write(`Substraction : ${sub(32, 16)}<br>`);
+        document.write(`Multiplication : ${mult(32, 16)}<br>`);
+        document.write(`Division : ${div(32, 16)}<br>`);
+      </script>
+    </center>
   </body>
 </html>
